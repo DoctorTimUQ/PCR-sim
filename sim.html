@@ -1,0 +1,35 @@
+<p></p>
+<p></p>
+<div class="main1">
+<p><br />This is a working prototype of the PCR simulator developed as part of the SCIE1025 Customisable Practical Module Library.</p>
+<p>Loaded in this way, using a standard iframe embed, the tool will load in any HTML context.</p>
+<p>This 'clean' load is effectively a sandbox in which PCR can be simulated. A sequence of A T G and C can be entered in the top field, and the buttons at the top right will generate a template DNA molecule.</p>
+<p>The bottom left fields generate primer molecules, and are representative of how primers are genuinely designed and ordered. These can then be moved, flipped, rotated, and manipulated into place, and the simulator will accurately represent correct base pairing.</p>
+<p>The effects of polymerase and temperature are functional, to the point that a PCR experiment can be simulated completely at the molecular level.</p>
+<p><iframe width="980" height="700" src="https://pcr-simulator.web.app/?preload=input: ; template: ; template: ; f: ; r: ;" title="Iframe Example" frameborder="&ldquo;0&rdquo;" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
+</div>
+<p></p>
+<div class="main1">
+<p><br />In this instance, the cimulator has been embedded with a code telling it to load with a pre-determined sequence. This is an example of how the tool can be made context specific. For example, an academic could load the tool in this way and then challenge students with a problem such as "Make the primers shown and attach them to their indicated binding sites."</p>
+<p></p>
+<p><iframe width="980" height="700" src="https://pcr-simulator.web.app/?preload=input: ; template: attcGATGAGCTACcggcagtatataatatgcgcgacgaaatctggAGATCGTATctagc ; template:  ; f: gatgagctac ; r: atacgatct ;" title="Iframe Example" frameborder="&ldquo;0&rdquo;" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
+</div>
+<p></p>
+<div class="main1">
+<p><br />This time the student must make primers themselves, but the location they should bind is highlighted</p>
+<p></p>
+<p><iframe width="980" height="700" src="https://pcr-simulator.web.app/?preload=input: ; template: attcGATGAGCTACcggcagtatataatatgcgcgacgaaatctggAGATCGTATctagc ; template:  ; f:  ; r:  ;" title="Iframe Example" frameborder="&ldquo;0&rdquo;" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
+</div>
+<p></p>
+<div class="main1">
+<p><br />This time the student is on their own, with only 5-3 top strand, as they would get from genbank. A single base is highlighted, which could indicate a mutation site we want to diagnose.</p>
+<p></p>
+<p><iframe width="980" height="700" src="https://pcr-simulator.web.app/?preload=input: ; template: attcagatatgagagcggcagtatataatatgcgCgacgaaatctggcatagtcagtagcatcactagc-TOP ; template:  ; f:  ; r:  ;" title="Iframe Example" frameborder="&ldquo;0&rdquo;" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
+</div>
+<p></p>
+<p></p>
+<div class="main1">
+<p><br />Multiple templates can be generated, useful for examining SNPS, RFLP and other concepts surrounding diploid differences. This example would illustrate a C to T SNP in a diploid organism.</p>
+<p></p>
+<p><iframe width="980" height="700" src="https://pcr-simulator.web.app/?preload=input: ; template: attcagatatgagagcggcagtatataatatgcgCgacgaaatctggcatagtcagtagcatcactagc ; template: attcagatatgagagcggcagtatataatatgcgTgacgaaatctggcatagtcagtagcatcactagc ; f:  ; r:  ;" title="Iframe Example" frameborder="&ldquo;0&rdquo;" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
+</div>
